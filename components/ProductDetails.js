@@ -1,11 +1,22 @@
 app.component("product-details", {
-  props: {},
+  props: {
+    details: {
+      type: Array,
+      required: true,
+    },
+  },
   template:
     /*html*/
-    "",
+    `<ul>
+        <li v-for="detail in productDetails">{{ detail }}</li>
+    </ul>`,
   data() {
     return {};
   },
   methods: {},
-  computed: {},
+  computed: {
+    productDetails() {
+      return this.details;
+    },
+  },
 });
