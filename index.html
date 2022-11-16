@@ -37,9 +37,7 @@
             <button class="button" v-on:click="addToCart">Add to Cart</button>
             <!-- v-on == event onclick, it execute the code inside the brackets -->
 
-            <button class="button" v-on:click="removeFromCart">
-              Remove from Cart
-            </button>
+            <button class="button" @click="removeFromCart">Remove item</button>
           </div>
         </div>
       </div>
