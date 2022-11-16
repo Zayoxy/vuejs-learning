@@ -19,7 +19,7 @@ app.component("review-form", {
             <option>1</option>
         </select>
         
-        <input class="button" type="submit" value="submit"/>
+        <input class="button" type="submit" value="Submit"/>
     </form>
     `,
   data() {
@@ -31,14 +31,14 @@ app.component("review-form", {
   },
 
   methods: {
-    onsubmit() {
+    onSubmit() {
       let productReview = {
         name: this.name,
         review: this.review,
         rating: this.rating,
       };
 
-      $this.$emit("review-submitted", productReview);
+      this.$emit("review-submitted", productReview);
       this.name = "";
       this.review = "";
       this.rating = null;
