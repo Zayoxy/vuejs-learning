@@ -12,16 +12,16 @@ const app = Vue.createApp({
           color: "green",
           image: "./assets/images/socks_green.jpg",
           quantity: 50,
-          onSale: false,
         },
         {
           id: 2235,
           color: "blue",
           image: "./assets/images/socks_blue.jpg",
           quantity: 0,
-          onSale: true,
         },
       ],
+
+      onSale: true,
     };
   },
   methods: {
@@ -35,14 +35,16 @@ const app = Vue.createApp({
 
   computed: {
     title() {
-      computedTitle = this.brand + " " + this.product;
+      return this.brand + " " + this.product;
+    },
 
-      // If the currently selected article is on sale, add this string to the title
-      if (this.variants[this.selectedVariant].onSale) {
-        computedTitle += " is on sale";
+    sale() {
+      saleString = "";
+      if (this.onSale) {
+        saleString = this.brand + " " + this.product + " is one sale!";
       }
 
-      return computedTitle;
+      return saleString;
     },
 
     image() {
