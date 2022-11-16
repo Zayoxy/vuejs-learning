@@ -1,5 +1,9 @@
 # Project
 
+<p align="center">
+    <a href="https://vuejs.org" target="_blank"><img src="./assets/images/Logo-Vuejs.png"></a>
+</p>
+
 This project is meant to learn the basics of VueJS
 
 ## Summary
@@ -21,4 +25,8 @@ I should've just forked it, but too late now 😭
 
 ## VueMastery
 
-[VueMastery on YouTube](https://youtu.be/bzlFvd0b65c?t=2934) (I Stopped right here at the end of lesson 10)
+[VueMastery crash course on YouTube](https://youtu.be/bzlFvd0b65c) (I did all the lessons)
+
+<p align="center">
+    <a href="https://vuemastery.com" target="_blank"><img src="./assets/images/Logo-VueMastery.png"></a>
+</p>
