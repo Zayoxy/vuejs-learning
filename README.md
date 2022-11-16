@@ -12,6 +12,7 @@ Throughout the course I learned about:
 - How to handle events
 - How to bind classes and to apply style html elements
 - How to split the structure of the website into components which let us re-use the component how many times we want and is much more readable (no huge file with everything within it)
+- I also learned how to bind value from html to vue using v-model, usually used when user input is needed (forms)
 
 # Source
 
